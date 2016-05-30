@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listatickets [
+<!ELEMENT listatickets (ticket+)>
+<!ELEMENT ticket (numero , fecha , hora , producto* , total)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT hora (#PCDATA)>
+
+<!ELEMENT producto (nombre , precio)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT total (#PCDATA)>
+
+]>
+<listatickets>
+  <ticket>
+      <numero>7483</numero>
+      <fecha>25/08/2016</fecha>
+        <hora>22:00</hora>
+       <producto>
+              <nombre>Agua</nombre>
+              <precio>1</precio>
+      </producto>
+      <producto>
+            <nombre>Refresco</nombre>
+            <precio>1.50</precio>
+      </producto>
+      <total>2.5</total>
+</ticket>
+  <ticket>
+    <numero>7484</numero>
+    <fecha>25/08/2016</fecha>
+    <hora>22:05</hora>
+    <producto>
+        <nombre>Refresco</nombre>
+        <precio>1.5</precio>
+    </producto>
+        <producto>
+        <nombre>Refresco</nombre>
+    <precio>1.5</precio>
+    </producto>
+    <total>3</total>
+  </ticket>
+</listatickets>

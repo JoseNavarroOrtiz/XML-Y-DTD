@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libro [
+<!ELEMENT libro (capitulo*)>
+<!ELEMENT capitulo (titulo,paginas,autor*)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT paginas (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+]>
+<libro>
+<capitulo>
+<titulo>El amanecer</titulo>
+<paginas>18</paginas>
+<autor>Carmen</autor>
+</capitulo>
+<capitulo>
+<titulo>Una tarde apacible</titulo>
+<paginas>34</paginas>
+<autor>Antonio</autor>
+<autor>Carmen</autor>
+</capitulo>
+<capitulo>
+<titulo>Conociendo el entorno</titulo>
+<paginas>27</paginas>
+<autor>Antonio</autor>
+</capitulo>
+</libro>

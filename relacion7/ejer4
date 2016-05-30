@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE universidad [
+<!ELEMENT universidad (alumnos* , profesores*, asignaturas)>
+<!ELEMENT alumnos ((dni* | pasaporte*) , nombre* , fecha* , asignaturas_matriculadas* , informacion_contacto*)>
+<!ELEMENT profesores ((dni* | pasaporte*) , nombre* , fecha* , informacion_contacto* , despacho* ,horario_tutorias* , asignaturas_imparten)>
+<!ELEMENT asignaturas (#PCDATA)>
+<!ELEMENT dni (#PCDATA)>
+<!ELEMENT pasaporte (#PCDATA)>
+<!ATTLIST pasaporte pais CDATA  #REQUIRED>
+
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT asignaturas_matriculadas (nota* , tipo* , codigo* ,  numero_creditos* , carrera* ,curso*)>
+
+<!ELEMENT nota (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+
+<!ELEMENT informacion_contacto (#PCDATA)>
+
+<!ELEMENT codigo (#PCDATA)>
+<!ELEMENT curso (#PCDATA)>
+<!ELEMENT numero_creditos (#PCDATA)>
+<!ELEMENT carrera (#PCDATA)>
+
+<!ELEMENT despacho (#PCDATA)>
+<!ELEMENT horario_tutorias (#PCDATA)>
+<!ELEMENT asignaturas_imparten (#PCDATA)>
+]>
+<universidad>
+    <alumnos>
+        <pasaporte pais="España">32121231</pasaporte>
+        <nombre>Alejandro</nombre>
+        <fecha>231</fecha>
+          <asignaturas_matriculadas >
+            <nota>SS</nota>
+            <tipo>optativa</tipo>
+            <codigo>12</codigo>
+            <numero_creditos>12</numero_creditos>
+            <carrera>TS</carrera>
+            <curso>1</curso>          
+          </asignaturas_matriculadas>
+          <informacion_contacto></informacion_contacto>
+    </alumnos>
+    <profesores>
+        <dni>432213</dni>
+        <nombre>Andres</nombre>
+        <fecha>213</fecha>
+        <informacion_contacto></informacion_contacto>   
+        <despacho>23</despacho>
+        <horario_tutorias>12:30</horario_tutorias> 
+        <asignaturas_imparten>ECONOMIA</asignaturas_imparten>
+    </profesores>
+    <asignaturas>27</asignaturas>
+</universidad>
